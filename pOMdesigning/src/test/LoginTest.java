@@ -11,7 +11,7 @@ import mainjava.loginPage;
 public class LoginTest extends basetest  {
 	@Test(priority=0)
 	public void verifylogin() {
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	
 		Loginpage.loginMethod();}
 		
 		@Test(priority=1)
@@ -25,8 +25,8 @@ public class LoginTest extends basetest  {
         Assert.assertEquals(pimpage.titleofpimpage(),"PIM");
 
     }
-    @Test(priority=-1)
-    public void verifyUrlofPage() {
-    	Assert.assertEquals(Loginpage.CurrentUrl(),"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-    }
+//    @Test(priority=-1)
+//    public void verifyUrlofPage() {
+//    	Assert.assertEquals(Loginpage.CurrentUrl(),"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+//    }
 }

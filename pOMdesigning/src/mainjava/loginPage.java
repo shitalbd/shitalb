@@ -10,10 +10,10 @@ import test.basetest;
 
 public class loginPage extends basetest {
 	//All the locators of page
-	@FindBy(xpath="//input[@name='username']")
+	@FindBy(name="username")
 	WebElement userName;
 	
-	@FindBy(xpath="//input[@name='password']")
+	@FindBy(name="password")
 	WebElement passWord;
 	
 	@FindBy(xpath="//*[text()=' Login ']")
@@ -39,9 +39,9 @@ public class loginPage extends basetest {
 		return txtloginpage.getText();
 	}
 	
-	public String CuurentUrl() {
+//	public String CuurentUrl() {
 		
-				return driver.getCurrentUrl();
-	}
+//				return driver.getCurrentUrl();
+//	}
 
 }
